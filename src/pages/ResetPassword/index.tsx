@@ -50,8 +50,6 @@ const ResetPassword: React.FC = () => {
 
         if (!token) {
           throw new Error();
-
-          return;
         }
 
         await apiClient.post('/password/reset', {
